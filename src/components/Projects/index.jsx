@@ -1,8 +1,13 @@
 import { BoxProject } from "./BoxProject";
-import { ProjectsContainer } from "./styles";
+import { AbilitiesContainer, KnowledgeBox, KnowledgeContainer, ProjectsContainer } from "./styles";
+// icons
+import { SiJavascript, SiTypescript, SiTailwindcss, SiGraphql, SiPython, SiExpress, SiFastify, SiPostgresql, SiPrisma, SiMongodb  } from "react-icons/si";
+import { FaNodeJs, FaDocker, FaReact, FaAws, FaLinux  } from "react-icons/fa";
+
+// Images
 import coffeDelivery from "../../assets/projects/coffeDelivery.png";
 import dtMoney from "../../assets/projects/dtMoney.png";
-import findAFriend from "../../assets/projects/find-a-friend.png";
+import aspop from "../../assets/projects/aspop.png";
 
 const projects = [{
     id: 1,
@@ -16,14 +21,14 @@ const projects = [{
     link_repository: "https://github.com/Victor-Palha/Coffe-Delivery",
 }, {
     id: 2,
-    title: "Find a Friend",
-    image: findAFriend,
-    description: "API for animal adoption",
-    completDescription: "An API created as an intermediary for organizations with animals available for adoption and users seeking new furry friends. Developed entirely in Node.js, the API leverages technologies such as Fastify, PostgreSQL, TypeORM Prisma, JWT, Vitest, Docker, and TypeScript.",
-    tags: "Back-end Project",
+    title: "Aspop Web Site",
+    image: aspop,
+    description: "Full-stack application for the Aspop organization",
+    completDescription: "The Association of Official Forensic Experts of Pará is an entity directly linked to the activities of the Pará Scientific Police. At ASPOP, we strive to enhance the recognition of the criminal forensic official career, promoting unity and integration among experts. Our efforts include disseminating criminal forensics knowledge and much more! Therefore, to become a member of this organization, it is necessary to work within the Pará Scientific Police in a role as a forensic expert. This encompasses:",
+    tags: "Full-stack Project",
     api: "",
-    link_project: "",
-    link_repository: "https://github.com/Victor-Palha/FindAFriend-API",
+    link_project: "https://aspop-pa.com",
+    link_repository: "",
 }, {
     id: 3,
     title: "DT Money",
@@ -38,6 +43,7 @@ const projects = [{
 
 export function Projects(){
     return (
+        <>
         <ProjectsContainer>
             {projects.map((project)=>{
                 return <BoxProject 
@@ -54,5 +60,72 @@ export function Projects(){
                 />
             })}
         </ProjectsContainer>
+        <AbilitiesContainer>
+            <h2>TECHNOLOGIES.</h2>
+            <KnowledgeContainer>
+                <KnowledgeBox>
+                    <FaNodeJs size={50}/>
+                    <p>Node.js</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <SiJavascript size={50}/>
+                    <p>JavaScript</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <SiTypescript size={50}/>
+                    <p>TypeScript</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <FaReact size={50}/>
+                    <p>React.js</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <SiTailwindcss size={50}/>
+                    <p>Tailwind CSS</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <SiGraphql size={50}/>
+                    <p>GraphQL</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <SiPython size={50}/>
+                    <p>Python</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <SiExpress size={50}/>
+                    <p>Express.js</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <SiFastify size={50}/>
+                    <p>Fastify</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <SiPostgresql size={50}/>
+                    <p>Postgres</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <SiPrisma size={50}/>
+                    <p>Prisma</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <SiMongodb size={50}/>
+                    <p>MongoDB</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <FaDocker size={50}/>
+                    <p>Docker</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <FaAws size={50}/>
+                    <p>AWS</p>
+                </KnowledgeBox>
+                <KnowledgeBox>
+                    <FaLinux size={50}/>
+                    <p>Linux</p>
+                </KnowledgeBox>
+
+            </KnowledgeContainer>
+        </AbilitiesContainer>
+        </>
     )
 }

@@ -6,6 +6,7 @@ import {BiLogoJavascript, BiLogoTypescript, BiLogoDocker, BiLogoPython} from 're
 import {IoLogoNodejs} from 'react-icons/io'
 import {FaReact} from 'react-icons/fa'
 import gifProgramming from "../../assets/Programming-pana.svg"
+import curriculum from "../../assets/Curriculo.pdf"
 
 
 export function Header(){
@@ -17,7 +18,7 @@ export function Header(){
                 <h2>Fullstack</h2>
                 <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-ferreira-palha-b67736216/" target="_blank" rel="external"><BsLinkedin size={30}/></a>
                 <a href="https://github.com/Victor-Palha" target="_blank" rel="external"><BsGithub size={30}/></a>
-                <a href="https://github.com/Victor-Palha" target="_blank" rel="external"><GiNotebook size={30}/></a>    
+                <a href={curriculum} download="curriculum"><GiNotebook size={30}/></a>    
             </HeaderIcons>
             <h1>Developer</h1>
             <HeaderDescription>
