@@ -61,6 +61,7 @@ export const KnowledgeBox = styled.div`
     cursor: pointer;
     transition: 0.3s;
     p{
+        font-size: 0.75rem;
         font-weight: bold;
         color: var(--primary-color);
     }
