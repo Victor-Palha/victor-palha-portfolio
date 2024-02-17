@@ -6,7 +6,7 @@ export const HeaderContainer = styled.header`
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--primary-color);
-    box-shadow: inset 0px 0px 40px #000;
+    /* box-shadow: inset 0px 0px 40px #000; */
     padding: 10rem 10rem;
 
     @media(max-width: 1567px){

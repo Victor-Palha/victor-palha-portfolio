@@ -1,4 +1,6 @@
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { OthersProjects } from "./components/OthersProjects";
 import { Projects } from "./components/Projects/index";
 import { GlobalStyle } from "./styles/global";
 
@@ -9,6 +11,8 @@ export function App() {
       <Header/>
       <GlobalStyle/>
       <Projects/>
+      <OthersProjects/>
+      <Footer/>
     </>
   )
 }
