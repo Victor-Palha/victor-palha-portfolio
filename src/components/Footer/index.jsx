@@ -3,11 +3,14 @@ import { SiJavascript, SiTypescript, SiTailwindcss, SiGraphql, SiPython, SiExpre
 import { FaNodeJs, FaDocker, FaReact, FaAws, FaLinux  } from "react-icons/fa";
 // styles
 import { AbilitiesContainer, KnowledgeBox, KnowledgeContainer } from "./styles";
+import { Contact } from "../Contact";
 
 export function Footer() {
     return(
+        <>
+        <Contact/>
         <AbilitiesContainer>
-            <h2>TECHNOLOGIES</h2>
+            <h2>Technologies & Skills</h2>
             <KnowledgeContainer>
                 <KnowledgeBox>
                     <FaNodeJs size={50}/>
@@ -69,8 +72,8 @@ export function Footer() {
                     <FaLinux size={50}/>
                     <p>Linux</p>
                 </KnowledgeBox>
-
             </KnowledgeContainer>
         </AbilitiesContainer>
+        </>
     )
 }

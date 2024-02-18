@@ -28,6 +28,7 @@ export const HeaderImage = styled.div`
             width: 20rem;
         }
     }
+
 `
 export const HeaderContent = styled.div`
     p{

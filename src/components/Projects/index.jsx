@@ -1,5 +1,5 @@
 import { BoxProject } from "./BoxProject";
-import { ProjectsContainer } from "./styles";
+import { ProjectsContainer, ProjectsName } from "./styles";
 
 // Images
 import coffeDelivery from "../../assets/projects/coffeDelivery.png";
@@ -21,7 +21,7 @@ const projects = [{
     title: "Aspop Web Site",
     image: aspop,
     description: "Full-stack application for the Aspop organization",
-    completDescription: "The Association of Official Forensic Experts of Pará is an entity directly linked to the activities of the Pará Scientific Police. At ASPOP, we strive to enhance the recognition of the criminal forensic official career, promoting unity and integration among experts. Our efforts include disseminating criminal forensics knowledge and much more! Therefore, to become a member of this organization, it is necessary to work within the Pará Scientific Police in a role as a forensic expert. This encompasses:",
+    completDescription: "The Association of Official Forensic Experts of Pará is an entity directly linked to the activities of the Pará Scientific Police. At ASPOP, we strive to enhance the recognition of the criminal forensic official career, promoting unity and integration among experts.",
     tags: "Full-stack Project",
     api: "",
     link_project: "https://aspop-pa.com",
@@ -41,6 +41,7 @@ const projects = [{
 export function Projects(){
     return (
         <>
+        <ProjectsName>Main Projects</ProjectsName>
         <ProjectsContainer>
             {projects.map((project)=>{
                 return <BoxProject 

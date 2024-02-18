@@ -5,15 +5,16 @@ import {GiNotebook} from 'react-icons/gi'
 import {BiLogoJavascript, BiLogoTypescript, BiLogoDocker, BiLogoPython} from 'react-icons/bi'
 import {IoLogoNodejs} from 'react-icons/io'
 import {FaReact} from 'react-icons/fa'
-import gifProgramming from "../../assets/Programming-pana.svg"
+import gifProgramming from "../../assets/Programming.gif"
 import curriculum from "../../assets/Curriculo.pdf"
+import { Writter } from "./Writter";
 
 
 export function Header(){
     return(
         <HeaderContainer>
         <HeaderContent>
-            <p>Hello There, i'm Victor Palha!</p>
+            <Writter/>
             <HeaderIcons>
                 <h2>Fullstack</h2>
                 <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-ferreira-palha-b67736216/" target="_blank" rel="external"><BsLinkedin size={30}/></a>
@@ -30,10 +31,11 @@ export function Header(){
                     <BiLogoPython size={25}/>
                     <FaReact size={25}/>
                 </div>
-                <p>I am 20 years old, and I am a full-stack developer with 2 years of experience working in companies and as a freelancer.</p>
+                <p>I am 21 years old, and I am a full-stack developer with 3 years of experience working in companies and as a freelancer.</p>
             </HeaderDescription>
         </HeaderContent>
         <HeaderImage>
+            
             <img src={gifProgramming} alt="gifProgramming"/>
         </HeaderImage>
         </HeaderContainer>
