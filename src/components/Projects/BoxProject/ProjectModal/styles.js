@@ -49,15 +49,13 @@ export const ModalContent = styled.div`
     display: flex;
     margin-top: 2rem;
     img{
-        width: 10rem;
-        box-shadow: -5px 5px 15px #000075;
-        border-radius: 25px;
+        width: 20rem;
     }
 
     @media(max-width: 831px){
         display: block;
         img{
-            box-shadow: 0px 5px 15px #000075;
+            width: 10rem;
             margin: 0px 5rem 2rem 5rem;
         }
     }

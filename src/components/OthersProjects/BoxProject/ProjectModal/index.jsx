@@ -42,13 +42,14 @@ export function ProjectModal({title, image, description, link_repository, link_p
                 )}
                 {id === 6 && (
                     <IconsModal>
-                        <SiJavascript size={30}/>
-                        <SiCss3 size={30}/>
+                        <FaReact size={30}/>
+                        <SiTypescript size={30}/>
+                        <SiStyledcomponents size={30}/>
                         <FaNodeJs size={30}/>
                         <SiTypescript size={30}/>
-                        <SiExpress size={30}/>
-                        <SiMongodb size={30}/>
-                        <SiMicrosoftazure size={30}/>
+                        <SiFastify size={30}/>
+                        <SiPostgresql size={30}/>
+
                     </IconsModal>
                 )}
                 <LinksModal>
@@ -72,7 +73,6 @@ export function ProjectModal({title, image, description, link_repository, link_p
                         <a href={link_repository} target="_blank" rel="external">Repository</a>
                     </>
                 )}
-                    
                 </LinksModal>
             </Content>
         </ModalContainer>

@@ -4,6 +4,7 @@ import { ProjectsContainer, ProjectsName } from "./styles";
 // Images
 import coffeDelivery from "../../assets/projects/coffeDelivery.png";
 import dtMoney from "../../assets/projects/dtMoney.png";
+import medieval from "../../assets/projects/medieval-client.png";
 import aspop from "../../assets/projects/aspop.png";
 
 const projects = [{
@@ -28,14 +29,14 @@ const projects = [{
     link_repository: "",
 }, {
     id: 3,
-    title: "DT Money",
-    image: dtMoney,
-    description: "Full-stack financial control application",
-    completDescription: "A full-stack project developed in Node.js for the back-end and React.js for the front-end. This application serves as a financial management tool, assisting users in tracking and calculating their income and expenses. The back-end utilizes TypeScript, Knex, PostgreSQL, Vitest, while the front-end is built with React, TypeScript, and styled-components.",
+    title: "Medieval Tavern",
+    image: medieval,
+    description: "Full-stack project for recipes of medieval fantasy food",
+    completDescription: "This application was built in Node.js and Express.js to provide recipes of medieval fantasy food. The API uses the MongoDB database to store the recipes and the Mongoose library to interact with the database. The API is hosted on Microsoft Azure. The front end was made on React.js and with Tailwind to style the components and to make the application responsive.",
     tags: "Full-stack Project",
-    api: "https://github.com/Victor-Palha/dt-money-api",
-    link_project: "https://dt-money-client.onrender.com/",
-    link_repository: "https://github.com/Victor-Palha/dt-money-api",
+    api: "https://medieval-tavern-api.azurewebsites.net/",
+    link_project: "https://medieval-tavern.onrender.com/",
+    link_repository: "https://github.com/Victor-Palha/Medieval-Tavern",
 }]
 
 export function Projects(){

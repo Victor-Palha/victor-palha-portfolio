@@ -2,7 +2,7 @@ import { CloseButton, Content, DescriptionModal, HeaderModal, IconsModal, LinksM
 import * as Dialog from '@radix-ui/react-dialog';
 import {GrClose} from 'react-icons/gr';
 import {FaReact, FaNodeJs} from 'react-icons/fa';
-import {SiTypescript, SiStyledcomponents, SiFastify, SiPostgresql, SiPrisma, SiDocker, SiVitest, SiTailwindcss } from 'react-icons/si';
+import {SiTypescript, SiStyledcomponents, SiFastify, SiPostgresql, SiPrisma, SiDocker, SiVitest, SiTailwindcss, SiExpress, SiMongodb, SiMicrosoftazure, SiCloudflare } from 'react-icons/si';
 import { FaAws } from "react-icons/fa";
 
 export function ProjectModal({title, image, description, link_repository, link_project, id, api}){
@@ -46,12 +46,13 @@ export function ProjectModal({title, image, description, link_repository, link_p
                 {id === 3 && (
                     <IconsModal>
                         <FaReact size={30}/>
-                        <SiTypescript size={30}/>
-                        <SiStyledcomponents size={30}/>
+                        <SiTailwindcss size={30}/>
                         <FaNodeJs size={30}/>
                         <SiTypescript size={30}/>
-                        <SiFastify size={30}/>
-                        <SiPostgresql size={30}/>
+                        <SiExpress size={30}/>
+                        <SiMongodb size={30}/>
+                        <SiCloudflare size={30}/>
+                        <SiMicrosoftazure size={30}/>
 
                     </IconsModal>
                 )}

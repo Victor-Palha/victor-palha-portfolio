@@ -8,12 +8,10 @@ export const BoxProjectContainer = styled.div`
     width: 20rem;
     img{
         cursor: pointer;
-        width: 20rem;
+        width: 30rem;
         transition: all 0.5s ease;
-        border-radius: 35px;
         &:hover{
             transform: scale(1.1);
-            box-shadow: 0px 5px 10px #000000;
         }
     }
 
@@ -23,7 +21,7 @@ export const BoxProjectContainer = styled.div`
     @media(max-width: 831px){
         margin: 2rem auto;
         img{
-            width: 15rem;
+            width: 20rem;
         }
     }
 `
