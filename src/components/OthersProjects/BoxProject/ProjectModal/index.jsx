@@ -17,7 +17,7 @@ export function ProjectModal({title, image, description, link_repository, link_p
                     </CloseButton>
                 </HeaderModal>    
                 <ModalContent>
-                    <img src={image}/>
+                    {/* <img src={image}/> */}
                     <DescriptionModal>
                         <p>{description}</p>
                     </DescriptionModal>
@@ -56,21 +56,21 @@ export function ProjectModal({title, image, description, link_repository, link_p
                 {id === 4 && (
                     <>
                         <a href={link_project} target="_blank" rel="external">Preview</a>
-                        <a href={link_repository} target="_blank" rel="external">Repository</a>
+                        <a href={link_repository} target="_blank" rel="external">GitHub Repository</a>
                     </>
                 )}
                 {id === 5 && (
                     <>
-                        <a href={link_project} target="_blank" rel="external">Preview</a>
-                        <a href={api}  target="_blank" rel="external">API</a>
-                        <a href={link_repository} target="_blank" rel="external">Repository</a>
+                        {/* <a href={link_project} target="_blank" rel="external">Preview</a> */}
+                        <a href={api}  target="_blank" rel="external">API Repository</a>
+                        <a href={link_repository} target="_blank" rel="external">GitHub Repository</a>
                     </>
                 )}
                 {id === 6 && (
                     <>
-                        <a href={link_project} target="_blank" rel="external">Preview</a>
-                        {/* <a href={api}  target="_blank" rel="external">API</a> */}
-                        <a href={link_repository} target="_blank" rel="external">Repository</a>
+                        {/* <a href={link_project} target="_blank" rel="external">Preview</a> */}
+                        <a href={api}  target="_blank" rel="external">API Repository</a>
+                        <a href={link_repository} target="_blank" rel="external">GitHub Repository</a>
                     </>
                 )}
                 </LinksModal>

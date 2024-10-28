@@ -5,7 +5,7 @@ import {FaReact, FaNodeJs} from 'react-icons/fa';
 import {SiTypescript, SiStyledcomponents, SiFastify, SiPostgresql, SiPrisma, SiDocker, SiVitest, SiTailwindcss, SiExpress, SiMongodb, SiMicrosoftazure, SiCloudflare } from 'react-icons/si';
 import { FaAws } from "react-icons/fa";
 
-export function ProjectModal({title, image, description, link_repository, link_project, id, api}){
+export function ProjectModal({title, _image, description, link_repository, link_project, id, api}){
     return (
         <ModalContainer>
             <Overlay/>
@@ -17,7 +17,7 @@ export function ProjectModal({title, image, description, link_repository, link_p
                     </CloseButton>
                 </HeaderModal>    
                 <ModalContent>
-                    <img src={image}/>
+                    {/* <img src={image}/> */}
                     <DescriptionModal>
                         <p>{description}</p>
                     </DescriptionModal>
@@ -60,7 +60,7 @@ export function ProjectModal({title, image, description, link_repository, link_p
                 {id === 1 && (
                     <>
                         <a href={link_project} target="_blank" rel="external">Preview</a>
-                        <a href={link_repository} target="_blank" rel="external">Repository</a>
+                        <a href={link_repository} target="_blank" rel="external">GitHub Repository</a>
                     </>
                 )}
                 {id === 2 && (
@@ -72,7 +72,7 @@ export function ProjectModal({title, image, description, link_repository, link_p
                     <>
                         <a href={link_project} target="_blank" rel="external">Preview</a>
                         <a href={api}  target="_blank" rel="external">API</a>
-                        <a href={link_repository} target="_blank" rel="external">Repository</a>
+                        <a href={link_repository} target="_blank" rel="external">GitHub Repository</a>
                     </>
                 )}
                     

@@ -48,7 +48,9 @@ export const Content = styled(Dialog.Content)`
 export const ModalContent = styled.div`
     display: flex;
     margin-top: 2rem;
+    
     img{
+        max-width: 20rem;
         width: 20rem;
     }
 
