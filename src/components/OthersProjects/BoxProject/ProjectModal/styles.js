@@ -40,22 +40,25 @@ export const Content = styled(Dialog.Content)`
     transform: translate(-50%, -50%);
 
     @media(max-width: 831px){
-        min-width: 15rem;
-        padding: 2rem 1rem;
+        min-width: 20rem;
+        padding: 1rem 1rem;
     }
 `
 
 export const ModalContent = styled.div`
     display: flex;
     margin-top: 2rem;
+    
     img{
-        width: 10rem;
+        max-width: 20rem;
+        width: 20rem;
     }
 
     @media(max-width: 831px){
         display: block;
         img{
-            margin: 0px 5rem 2rem 5rem;
+            width: 10rem;
+            margin: 0px 2rem 1rem 2rem;
         }
     }
 `
@@ -71,9 +74,9 @@ export const DescriptionModal = styled.div`
 
     @media(max-width: 831px){
         p{
-            font-size: 1rem;
+            font-size: 0.75rem;
         }
-        margin: 0rem 1rem;
+        margin: 0rem 0.5rem;
     }
 `
 
@@ -101,6 +104,11 @@ export const LinksModal = styled.div`
         &:hover{
             background-color: var(--tags-color);
             color: var(--tags-background);
+        }
+
+        @media(max-width: 831px){
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
         }
     }
 `
